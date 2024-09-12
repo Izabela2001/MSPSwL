@@ -32,7 +32,7 @@ function sendConfirmationEmail($email) {
         $mail->Host = 'smtp.office365.com';
         $mail->SMTPAuth = true;
         $mail->Username = 'mspwmulti@outlook.com';
-        $mail->Password = 'Najiza1414';
+        $mail->Password = '*******';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
         $mail->setFrom('mspwmulti@outlook.com', 'MSPwŁ');
