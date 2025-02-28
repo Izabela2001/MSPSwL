@@ -31,11 +31,11 @@ function sendConfirmationEmail($email) {
         $mail->isSMTP();
         $mail->Host = 'smtp.office365.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'mspwmulti@outlook.com';
+        $mail->Username = 'example@outlook.com';
         $mail->Password = '*******';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
-        $mail->setFrom('mspwmulti@outlook.com', 'MSPwŁ');
+        $mail->setFrom('example@outlook.com', 'MSPwŁ');
         $mail->addAddress($email);
 
         $mail->isHTML(true);
